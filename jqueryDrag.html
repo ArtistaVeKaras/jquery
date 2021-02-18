@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>jQuery tutorial</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+<h1>JQuery tutorial</h1>
+<style>
+    #drag {
+        width: 150px;
+        height: 60px;
+        background-color: blueviolet;
+    }
+</style>
+    <script>
+      $(function() {
+          $('#drag').draggable();
+      });
+    </script>
+    <div id="drag">
+        <p>Drag me around</p>
+    </div>
+  </body>
+</html>

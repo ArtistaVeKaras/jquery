@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>jQuery tutorial</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button>Bye</button>
+    <div class="puppers">
+      <img id="one" src="fruits/blueberries.jpeg" />
+      <img id="two" src="fruits/banana.jpeg" />
+      <img id="three" src="fruits/aaple.jpeg" />
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#one").fadeOut("slow");
+          $("#two").fadeOut("fast");
+          $("#three").fadeOut("slow");
+        });
+      });
+    </script>
+  </body>
+</html>

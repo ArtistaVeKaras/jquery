@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>jQuery tutorial</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>jquery tutorial</h1>
+    <p>By Edureka</p>
+    <p>Start pressing...</p>
+    <script>
+      $(document).ready(function() {
+        $("button").click(function() {
+          alert("Value: " + $("sometext").val());
+        });
+      });
+    </script>
+    <input type="text" id="sometext" value="">
+    <button>Submit</button>
+    <ul>
+      <li>banana</li>
+      <li>apple</li>
+      <li>orange</li>
+    </ul>
+
+    <div class="puppers">
+      <img src="fruits/blueberries.jpeg"/>
+      <img src="fruits/banana.jpeg" />
+      <img src="fruits/aaple.jpeg" />
+    </div>
+    <input id="press" type="text" size="10">
+
+    <button class="button" id="hide">Hide</button>
+    <button class="button" id="show">Show</button>
+    <script>
+        //this script will add a border to all the elements with the img tag
+    //    $(document).ready(function(){
+    //        $('img').click(function(){
+    //         // $('img').addClass("styleclass") //add a border to each img
+    //         $(this).hide(); //hides the img once clicked
+    //        })
+    //    })
+
+    /**this will hide the last p element
+     * /
+        $(document).ready(function(){
+            $('input').on('keypress', function(){
+                $('p:last').hide();
+            })
+        })
+
+        /*
+        this will hide and show the img when a button is clicked
+        */
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('img').hide();
+            })
+            $('#show').click(function(){
+                $('img').show();
+            }) 
+        })
+    </script>
+    <style>
+        .styleclass{
+            border: 3px solid green
+        }
+    </style>
+    <button>Try thisClass</button>
+  </body>
+</html>
